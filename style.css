@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 1em;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #e74c3c;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.recipe-header {
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 1em;
+}
+.serving-control {
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 1em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+th, td {
+    padding: 0.75em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background: #e74c3c;
+    color: #fff;
+}
+.timer-section, .steps-section {
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 1em;
+}
+.timer-display {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+.step {
+    margin: 0.5em 0;
+}
+.step-text {
+    margin-left: 0.5em;
+}
+.save-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.save-btn:hover {
+    background: #c0392b;
+}
+select, button {
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+.step-completed {
+    color: #888;
+    text-decoration: line-through;
+}
+/* 카테고리 필터 스타일 */
+.category-filter-section {
+    margin-bottom: 1em;
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+.category-btn {
+    border: none;
+    background: #f1f1f1;
+    color: #e74c3c;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0.5em 1.2em;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    margin-right: 0.3em;
+    margin-bottom: 0.3em;
+    font-size: 1em;
+}
+.category-btn.selected,
+.category-btn:active {
+    background: #e74c3c;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(231,76,60,0.08);
+}
