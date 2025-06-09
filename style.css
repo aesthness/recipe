@@ -11,6 +11,10 @@
         padding: 0.5em;
         font-size: 16px; /* 폰트 조금 키우기 */
     }
+    img {
+        max-width: 80%;  /* 모바일에서 화면폭의 80%까지만 */
+        margin-bottom: 0.8em;
+    }
     .container {
         max-width: 100%;
         padding: 0 0.5em;
