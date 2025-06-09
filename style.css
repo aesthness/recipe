@@ -1,3 +1,37 @@
+/* 기본은 PC 기준 (최대 800px 너비) */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1em; /* 좌우 여백 */
+}
+
+/* 모바일 대응 */
+@media (max-width: 600px) {
+    body {
+        padding: 0.5em;
+        font-size: 16px; /* 폰트 조금 키우기 */
+    }
+    .container {
+        max-width: 100%;
+        padding: 0 0.5em;
+    }
+    table, .recipe-header, .serving-control, .timer-section, .steps-section, .category-filter-section {
+        padding: 0.8em;
+        font-size: 0.9em;
+    }
+    .category-btn {
+        padding: 0.4em 0.9em;
+        font-size: 0.9em;
+    }
+    .timer-display {
+        font-size: 1.5em;
+    }
+    .save-btn {
+        padding: 0.6em 1.2em;
+        font-size: 0.9em;
+    }
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
