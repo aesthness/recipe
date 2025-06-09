@@ -718,8 +718,9 @@
             .then(res => res.json())
             .then(data => console.log("레시피 클릭 기록됨:", data))
             .catch(err => console.error("레시피 클릭 기록 실패:", err));
-        }        
+        }
 
+        const randomIndex = Math.floor(Math.random() * recipes.length);
         // 초기화
         renderCategoryFilters();
-        displayRecipe(0);
+        displayRecipe(randomIndex);
