@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'s Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1></h1>
+        <div class="category-filter-section" id="categoryFilterSection">
+            <!-- JS에서 버튼이 동적으로 생성됩니다 -->
+        </div>
+        <div class="recipe-header"></div>
+        <div class="serving-control">
+            <h3>인분</h3>
+            <button id="decreaseServing">-</button>
+            <span id="currentServing"></span>
+            <button id="increaseServing">+</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>재료</th>
+                    <th>수량</th>
+                    <th>준비 방법</th>
+                </tr>
+            </thead>
+            <tbody id="ingredientTable"></tbody>
+        </table>
+        <div class="timer-section">
+            <h3>타이머</h3>
+            <div class="timer-display" id="timerDisplay">00:00</div>
+            <button id="startTimer">시작</button>
+            <button id="stopTimer">정지</button>
+            <button id="resetTimer">초기화</button>
+        </div>
+        <div class="steps-section"></div>
+        <button class="save-btn" id="saveBtn">완료</button>
+    </div>    
+    <script src="main.js"></script>
+</body>
+</html>
